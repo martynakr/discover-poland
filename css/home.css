@@ -1,0 +1,190 @@
+#intro {
+  min-height: 500px;
+  width: 100%;
+  background-image: url("../photos/Wroclaw-colorful-houses cropped.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center center;
+  color: white;
+  text-align: center;
+  padding: 120px;
+}
+
+.white-button {
+  text-decoration: none;
+  border: 0;
+  background-color: #db4500;
+  font-size: 16px;
+  padding: 8px 16px;
+  margin-top: 5px;
+  border-radius: 30px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+}
+
+.container-image {
+  width: 400px;
+  margin: 40px;
+}
+
+.container-text {
+  padding-top: 100px;
+  flex: 1 1 auto;
+}
+
+.flex {
+  display: flex;
+}
+
+#places-to-visit {
+  background-color: #f4e2c1;
+}
+
+#places-to-visit > .container > h3 {
+  padding-top: 40px;
+  text-align: center;
+}
+#places-to-visit > .container > p {
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 40px;
+}
+
+#places-to-visit > .container > .gallery-align {
+  display: flex;
+  justify-content: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+  padding-bottom: 100px;
+}
+
+#places-to-visit > .container > .gallery-align > .gallery > .image {
+  position: relative;
+  width: 600px;
+}
+
+#places-to-visit > .container > .gallery-align > .gallery > .image > a > img {
+  display: block;
+  width: 100%;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* white image overlay, invisible */
+#places-to-visit
+  > .container
+  > .gallery-align
+  > .gallery
+  > .image
+  > .image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: white;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 25px;
+  font-weight: bold;
+  opacity: 0;
+}
+
+#places-to-visit
+  > .container
+  > .gallery-align
+  > .gallery
+  > .image
+  > .image-overlay
+  > a:link {
+  color: #db4500;
+  text-decoration: none;
+}
+#places-to-visit
+  > .container
+  > .gallery-align
+  > .gallery
+  > .image
+  > .image-overlay
+  > a:visited {
+  color: #46065b;
+}
+
+#places-to-visit
+  > .container
+  > .gallery-align
+  > .gallery
+  > .image
+  > .image-overlay:hover {
+  opacity: 0.8;
+  transition: opacity 0.25s;
+}
+
+#destination-generator > .container > h3 {
+  padding-top: 40px;
+  text-align: center;
+}
+
+#destination-generator > .container > .destination-survey {
+  border: 4px solid black;
+  border-radius: 40px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  font-weight: bold;
+}
+
+#destination-generator > .container > .destination-survey > .survey-options {
+  display: flex;
+  justify-content: space-around;
+}
+#destination-generator > .container > .destination-survey > .survey-options > {
+  display: flex;
+  justify-content: space-around;
+}
+
+#destination-generator
+  > .container
+  > .destination-survey
+  > .survey-options
+  > #hiking-in-mountains {
+  text-align: center;
+}
+
+#destination-generator
+  > .container
+  > .destination-survey
+  > .survey-options
+  > #hiking-in-mountains
+  > img {
+  width: 130px;
+}
+
+#destination-generator > .container > .destination-survey > .centerButton {
+  display: flex;
+  justify-content: center;
+}
+
+#destination-generator > .container > p {
+  text-align: center;
+}
+
+#destination-generator > .container > .destination-survey > p {
+  text-align: center;
+}
+
+#destination-generator > .container > .destination-survey > p > a:link {
+  color: #db4500;
+  text-decoration: none;
+}
+
+#destination-generator > .container > .destination-survey > p > a:visited {
+  color: #46065b;
+  text-decoration: none;
+}

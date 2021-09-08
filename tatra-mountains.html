@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+
+<head>
+  <title>Discover Tatra Mountains</title>
+  <link rel="stylesheet" href="css/stylesheet.css" />
+  <link rel="stylesheet" href="css/tatra-mountains.css" />
+</head>
+
+<body>
+  <!--navbar-->
+  <div class="navbar">
+    <div class="container">
+      <nav>
+        <ul>
+          <!--logo - link to homepage-->
+          <a href="home.html"> <img class="logo" src="icons/dp logo.png" /></a>
+          <li><a href="home.html#about">About</a></li>
+          <!--Dropdown with places to visit-->
+          <div class="dropdown">
+            <button class="dropbtn">
+              Places To Visit
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="tatra-mountains.html">Tatra Mountains</a>
+              <a href="mazury.html">Mazury</a>
+              <a href="baltic-sea.html">Baltic Sea</a>
+              <a href="wroclaw.html">Wroclaw</a>
+            </div>
+          </div>
+          <li>
+            <a href="home.html#destination-generator">Destination Generator</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+
+  <main>
+    <section id="intro-tatra">
+      <div class="container2">
+        <h1>Tatra Mountains</h1>
+        <p>The home of the Sleeping Knight</p>
+        <br />
+      </div>
+    </section>
+    <section id="about-tatra">
+      <div class="container">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
+          imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae
+          scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices
+          nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut
+          aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in
+          odio. Praesent convallis urna a lacus interdum ut hendrerit risus
+          congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac.
+        </p>
+        <br />
+        <br />
+      </div>
+    </section>
+
+    <section id="tatra-places">
+      <div class="container">
+        <h3>Things to do in Tatra Mountains</h3>
+
+        <div class="tatra-gallery">
+          <img src="photos\giewont.jpg" />
+          <div class='descriptions'>
+            <h4>Hike Giewont - The Sleeping Knight</h5>
+              <br>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
+                imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae
+                scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices.
+                <br>
+                <br>
+                Nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut
+                aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio.
+              </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="links">
+          <ul>
+            <li>Contact Us</li>
+            <li>Privacy Policy</li>
+          </ul>
+        </div>
+
+        <form class="newsletter-signup" onsubmit="return false">
+          <br />
+          <div class="signupTitle">
+            <h4>Sign up to our newsletter</h4>
+          </div>
+
+          <label for="first-name">First Name</label>
+          <input type="text" name="firstName" id="firstName" placeholder="Enter your first name" required />
+          <label for="email">Email</label>
+          <input type="text" name="email" id="email" placeholder="Enter your email address" required />
+          <br />
+          <button type="button" class="white-button opn" onclick="sendContact();">
+            Sign up
+          </button>
+        </form>
+      </div>
+      <div id="myModal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <p class="modalMessage">Some text in the Modal..</p>
+        </div>
+      </div>
+
+      <div class="copyright">
+        Made By Martyna
+        <script>
+          document.write(new Date().getFullYear());
+        </script>
+      </div>
+    </div>
+  </footer>
+</body>
+<script src="script.js"></script>

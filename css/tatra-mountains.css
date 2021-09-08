@@ -1,0 +1,50 @@
+#intro-tatra {
+  min-height: 500px;
+  width: 100%;
+  background-image: url("../photos/Tatra-Mountains-bg.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  color: black;
+  text-align: center;
+  padding: 180px;
+}
+
+#intro-tatra > .container2 {
+  max-width: 400px;
+  margin: 0 auto;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+#intro-tatra > .container2 > p {
+  font-size: 20px;
+}
+
+#about-tatra {
+  margin-top: 50px;
+}
+
+#tatra-places {
+  background-color: #f4e2c1;
+}
+
+#tatra-places > .container > h3 {
+  text-align: center;
+  margin: 10px;
+  padding: 30px;
+}
+
+#tatra-places > .container > .tatra-gallery {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-gap: 40px;
+  padding-bottom: 50px;
+  align-items: center;
+}
+#tatra-places > .container > .tatra-gallery > img {
+  width: 600px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+}
+
+#tatra-places > .container > .tatra-gallery > .descriptions > h4 {
+  font-size: 20px;
+}
